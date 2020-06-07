@@ -1,0 +1,75 @@
+MAILDIR=$HOME/Mail/
+ORGMAIL=/var/mail/$LOGNAME
+DEFAULT=$MAILDIR/inbox/new
+VERBOSE=off
+LOGFILE=/tmp/procmaillog
+LOCKFILE=$HOME/.lockmail
+VERBOSE=no
+
+:0
+* ^From.*@paiza.jp
+/dev/null
+
+:0
+* ^From.*jx3@kingsoft.com
+/dev/null
+
+:0
+* ^From.*mircosoft
+/dev/null
+
+:0
+* ^From.*51job
+/dev/null
+
+:0
+* ^From.*@lingvist
+/dev/null
+
+:0
+* ^From.*@twitter.com
+/dev/null
+
+:0
+* ^From.*zhengsiruanjian@163.com
+$HOME/Mail/salary/zsrj/new
+:0
+* ^From.*jiangyp
+$HOME/Mail/salary/zsrj/new
+
+:0
+* ^From.*@blizzard
+$HOME/Mail/blizzard/new
+:0
+* ^From.*@battlenet.com.cn
+$HOME/Mail/blizzard/new
+:0
+* ^From.blz-noreply@service.netease.com
+$HOME/Mail/blizzard/new
+
+:0
+* ^From.*@miliaoapp.com
+$HOME/Mail/MI/new
+:0
+* ^From.*xiaomi
+$HOME/Mail/MI/new
+
+:0
+* ^From.*531918048
+$HOME/Mail/myself/new
+
+:0
+* ^From.*tajima
+$HOME/Mail/tajima/new
+
+:0
+* ^From.*@nintendo.net
+$HOME/Mail/nintendo/new
+
+:0
+* ^From.*@nicovideo.jp
+$HOME/Mail/niconico/new
+
+:0
+* ^From.*playstation
+$HOME/Mail/playstation/new
